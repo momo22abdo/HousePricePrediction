@@ -1,0 +1,45 @@
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore all pickle files by default
+*.pkl
+
+# Allow models folder (override)
+!models/
+!models/*.pkl
+
+# IDE/project settings
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Data (ignore raw datasets if large)
+data/*.csv
+data/*.txt
+
+# Outputs (ignore everything by default)
+outputs/*
+
+# Allow plots (PNG files) to be committed
+!outputs/plots/
+!outputs/plots/*.png
+
+# Experiment runs (e.g. catboost_info, temp results)
+experiments/
+
+# Jupyter Notebook checkpoints (لو فيه نوتبوكس)
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
